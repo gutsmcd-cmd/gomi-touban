@@ -1,0 +1,24 @@
+:root { --acc: #166534; --acc-ink: #fff; }
+.today, .day, .rule, .cat {
+  background: var(--card); border-radius: 16px; box-shadow: var(--shadow); padding: 12px 14px;
+}
+.today { padding: 16px; }
+.kicker { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.04em; color: var(--acc); margin: 0; }
+.bigdate { font-size: 1.35rem; font-weight: 800; margin: 2px 0 8px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 4px 10px;
+  border-radius: 999px; background: color-mix(in srgb, var(--acc) 14%, var(--card)); font-weight: 700;
+}
+.days { display: flex; flex-direction: column; gap: 8px; }
+.day { display: flex; gap: 10px; align-items: flex-start; }
+.day time { font-weight: 800; min-width: 6.5rem; padding-top: 4px; }
+.rule, .cat { display: flex; gap: 8px; align-items: center; }
+.rule-main, .cat-main { flex: 1; min-width: 0; }
+.rule-main strong, .cat-main strong { display: block; }
+.dates { display: flex; flex-wrap: wrap; gap: 6px; }
+.dates button { min-height: 36px; }
+h2.sec { font-size: 1rem; margin: 10px 0 0; }
+.emoji-input { max-width: 88px; text-align: center; font-size: 1.3rem; }
+
+.set-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); display: block; margin: 4px 0; }
