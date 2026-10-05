@@ -37,7 +37,7 @@ const ja = {
 };
 export type Dict = typeof ja;
 const en: Dict = {
-  app: 'Gomi Touban',
+  app: 'Trash Duty',
   today: 'Today',
   next: 'Next 14 days',
   none: 'Nothing scheduled',
