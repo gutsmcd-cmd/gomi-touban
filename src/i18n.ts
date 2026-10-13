@@ -1,6 +1,6 @@
 export type Lang = 'ja' | 'en';
 const ja = {
-  app: 'ごみ当番',
+  app: 'ごみの日',
   today: '今日',
   next: 'この先14日',
   none: 'この日の収集はありません',

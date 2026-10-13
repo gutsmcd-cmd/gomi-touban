@@ -9,8 +9,8 @@ export default defineConfig({
       includeAssets: ['icons/*.png'],
       manifest: {
         id: '/gomi-touban/',
-        name: 'ごみ当番',
-        short_name: 'ごみ当番',
+        name: 'ごみの日',
+        short_name: 'ごみの日',
         description:
           'ごみの日を自分で登録するカレンダー。無料・広告なし・ログイン不要・オフライン対応。A personal trash-day calendar you fill in yourself — free, no ads, no login, offline.',
         lang: 'ja',
