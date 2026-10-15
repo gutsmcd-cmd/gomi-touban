@@ -22,3 +22,16 @@ h2.sec { font-size: 1rem; margin: 10px 0 0; }
 .emoji-input { max-width: 88px; text-align: center; font-size: 1.3rem; }
 
 .set-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); display: block; margin: 4px 0; }
+
+/* Shirley check (Oct 2026): larger text and 48px tap targets for older eyes and fingers. */
+.lang-toggle { font-size: 1rem; }
+.lang-toggle button { min-height: 48px; min-width: 48px; padding: 0 12px; opacity: 1; }
+.icon-btn { width: 48px; height: 48px; }
+label.field, .small, .foot { font-size: 1rem; }
+.seg button { min-height: 48px; font-size: 1rem; color: #55555f; }
+@media (prefers-color-scheme: dark) { .seg button { color: var(--muted); } }
+.btn, .input, select.input { min-height: 48px; }
+.toast button { min-height: 48px; }
+.kicker, .set-label { font-size: 1rem; }
+.chips button, .dates button, .switch .toggle { min-height: 48px; }
+@media (prefers-color-scheme: dark) { .kicker { color: #4ade80; } }
