@@ -23,15 +23,32 @@ h2.sec { font-size: 1rem; margin: 10px 0 0; }
 
 .set-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); display: block; margin: 4px 0; }
 
-/* Shirley check (Oct 2026): larger text and 48px tap targets for older eyes and fingers. */
-.lang-toggle { font-size: 1rem; }
-.lang-toggle button { min-height: 48px; min-width: 48px; padding: 0 12px; opacity: 1; }
+/* Shirley check (Oct 2026): AA contrast and 48px tap targets. Bigger text is opt-in via 大きい文字 (html.big-text). */
+.lang-toggle button { min-height: 48px; min-width: 48px; padding: 0 6px; opacity: 1; }
 .icon-btn { width: 48px; height: 48px; }
-label.field, .small, .foot { font-size: 1rem; }
-.seg button { min-height: 48px; font-size: 1rem; color: #55555f; }
+.seg button { min-height: 48px; color: #55555f; }
 @media (prefers-color-scheme: dark) { .seg button { color: var(--muted); } }
 .btn, .input, select.input { min-height: 48px; }
 .toast button { min-height: 48px; }
-.kicker, .set-label { font-size: 1rem; }
+
+/* 大きい文字 / Large text switch */
+.top-tools { display: flex; align-items: center; gap: 4px; flex: none; }
+.big-text-btn {
+  min-width: 48px; min-height: 48px; padding: 0 8px; border-radius: 999px; flex: none;
+  border: 1.5px solid currentColor; background: transparent; color: inherit;
+  display: inline-flex; align-items: center; justify-content: center; gap: 1px; font-weight: 800; line-height: 1;
+}
+.big-text-btn .bt-s { font-size: 12px; margin-top: 5px; }
+.big-text-btn .bt-l { font-size: 19px; }
+.big-text-btn[aria-pressed='true'] { background: var(--acc-ink, #fff); color: var(--acc); }
+
 .chips button, .dates button, .switch .toggle { min-height: 48px; }
 @media (prefers-color-scheme: dark) { .kicker { color: #4ade80; } }
+
+html.big-text { font-size: 112.5%; }
+html.big-text .lang-toggle, html.big-text label.field, html.big-text .small, html.big-text .foot, html.big-text .seg button { font-size: 1rem; }
+
+html.big-text .kicker, html.big-text .set-label { font-size: 1rem; }
+html.big-text .topbar h1 { font-size: 18px; }
+.chips[role='group'] { gap: 4px; flex-wrap: nowrap; }
+.chips[role='group'] button { flex: 1 1 0; min-width: 0; padding: 6px 0; }
